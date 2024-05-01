@@ -7,9 +7,10 @@
         /* Ruta de la fuente */
 }
 
+
 *{
     box-sizing: border-box;
-    font-family: Donau;
+    font-family: 'Donau';
     margin: 0;
     padding: 0;
     justify-content: center;
