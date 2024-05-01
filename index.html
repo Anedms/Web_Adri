@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+      <!-- Codificación para que se visualicen correctamente los carácteres del español (ñ, tildes, etc.) -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Título que aparecerá en la pestaña del navegador -->
+    <title>PORTFOLIO_AdrianaNieto</title>
+    <!-- Icono que aparecerá en la pestaña del navegador -->
+    <link href="img/Adri.png" rel="icon" type="image/png">
+    <!-- Enlace a la librería de iconos Font Awesome -->
+    <script src="https://kit.fontawesome.com/c3fd22b8e3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Galería de iconos de Google-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   
+    
+    <!-- Para permitir la adaptación a móvil -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- JQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Mi script-->
+    <script src="js/script.js"></script>
+     <!-- Enlace a la hoja de estilos -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">ADRIANA</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">ABOUT ME </a></li>
+                    <li><a href="#art2d" onclick="seleccionar()">ART 2D</a></li>
+                    <li><a href="#art3d" onclick="seleccionar()">ART 3D</a></li>
+                    <li><a href="#proyectos"onclick="seleccionar()">PROYECTOS</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <!--<div class="contenedor-img">
+                <img src="img/hero.png" alt="">
+            </div>-->
+            <h1>PORTFOLIO</h1>
+            <h2>ADRIANA NIETO - ARTISTA</h2>
+            <!-- <div class="redes">                      
+            
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                
+            </div>-->
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>ABOUT ME</h2>
+            <p><span>Soy Adriana Nieto Eiroa </span> 
+                una estudiante de tercero de videojuegos en UDIT, que se está especializando en la rama artística.
+                En estos momentos estoy intentando ampliar mi estilo, pero el estilo donde me siento más cómoda es el semi-realista con el que trato de representar la esencia de lo que dibujo.
+            </p>
+            <p>
+                Exploro estilos nuevos en proyectos cortos como las Jams para enriquecer mi expresión artística. Me adapto a cualquier estilo que me proponga.
+            </p>
+            <p>
+                Organizo mi trabajo semanalmente, planificando cada lunes según las prioridades. Reviso y corrijo fallos a medida que avanzo.
+
+            </p>
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>VIDEOJUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MÚSICA</span>
+                        </div>
+                        <!--<div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>-->
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        <a target="_blank" href="/AdrianaNieto_CV.pdf">
+            <button>
+                Curriculum <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+                </a>
+    </section>
+
+ 
+
+    <!-- SECCION ALBUM art 2D -->
+    <section id="art2d" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>ART 2D</h2>
+            <div class="galeria">
+                <a href="/pagina2.html"><!--para linkear la pagina-->
+                <div class="proyecto">
+                    <img src="img/edit.jpg" alt="">
+                    <div class="overlay">
+                        <h3>ILUSTRACIÓN</h3>
+                        <p>Concept</p>
+                        
+                    </div>
+                </div>
+                    </a>
+                <div class="proyecto">
+                    <img src="img/EnProceso.jpg" alt="">
+                    <div class="overlay">
+                        <h3>En proceso</h3>
+                        <p>:)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SECCION ALBUM 3D -->
+    <section id="art3d" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>ART 3D</h2>
+            <div class="galeria">
+                <a href="/pagina3.html">
+                <div class="proyecto">
+                    <img src="img/FoodtruckFinal.jpg" alt="">
+                    <div class="overlay">
+                        <h3>FOODTRUCK</h3>
+                        <p>3d</p>
+                        
+                    </div>
+                </div>
+                    </a>
+                <div class="proyecto">
+                    <img src="img/EnProceso.jpg" alt="">
+                    <div class="overlay">
+                        <h3>En proceso</h3>
+                        <p>Dentro de poco estará</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+     <!-- SECCION PROYECTOS-->
+    <section id="proyectos" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PROYECTOS</h2>
+            <div class="galeria">
+                <a href="./pagina4.html"> <!--No me funciona-->
+                <div class="proyecto">
+                    <img src="img/Equipo_IndieForest.jpg" alt="">
+                    <div class="overlay">
+                        <h3>INDIE FOREST</h3>
+                        <p>HackForGood  2022 de noviembre</p>
+                    </div>
+                </div>
+                    </a>
+                <div class="proyecto">
+                    <img src="img/EnProceso.jpg" alt="">
+                    <div class="overlay">
+                        <h3>En proceso</h3>
+                        <p>Dentro de poco estará</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Tú Nombre">
+                    <input type="text" placeholder="Número telefónico">
+                    <input type="text" placeholder="Dirección de correo">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- datos personales -->
+                <div class="col">
+                  
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            06-12-2003
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            601 04 30 13
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            Eiroaadriana@gmail.com
+                        </li>
+                    </ul>
+                </div>
+             
+            </div>
+                
+                
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-skype"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-solid fa-rss"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
