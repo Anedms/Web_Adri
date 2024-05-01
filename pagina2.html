@@ -7,9 +7,30 @@
     <meta charset="utf-8">
      <!-- Enlace a la hoja de estilos -->
     <link rel="stylesheet" href="css/estilo2.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">ADRIANA</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">ABOUT ME </a></li>
+                    <li><a href="#art2d" onclick="seleccionar()">ART 2D</a></li>
+                    <li><a href="#art3d" onclick="seleccionar()">ART 3D</a></li>
+                    <li><a href="#proyectos"onclick="seleccionar()">PROYECTOS</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
          <section>
         <h1>ART 2D</h1>
     <div class="inicio">

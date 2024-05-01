@@ -26,20 +26,47 @@ h1{
 }
 
 .inicio {
-    padding: 3%;
-    display: flex;
-    max-width: 1500px;
-    margin: auto;
+    background-size: cover;
+    height: 100vh;
 }
+
+.inicio #video_resumen {
+    display: flex;
+    margin-right: 4em;
+    margin-left: 4em;
+}
+
+
+
+.inicio .titulo h1{
+    font-size: 60px;
+    text-align: center;
+    padding-bottom: 1em;
+    color: black;
+    text-align: left;
+    text-align: center;
+    margin-bottom: 2em;
+    height: 1.2em;
+    width: 100%;
+}
+
+.inicio .resumen {
+    display: flex;
+    flex-direction: column;
+    }
+    
 
 .inicio .resumen h3{
     font-size: 30px;
     text-align: center;
     padding-bottom: 1em;
+    color: black;
+    text-align: left;
 }
 
 .inicio .resumen .texto{
     padding-right: 4em;
+    color: black;
 }
 
 .mi-funcion{
@@ -82,4 +109,17 @@ h1{
     text-align: center;
     font-size: 40;
     padding-bottom: 40px;
+}
+
+.back button {
+width: 10rem;
+height: 3em;
+border-radius: 20px;
+border-style: none;
+background-color: #A24736;
+}
+
+.back button a{
+text-decoration: none;
+color: white;
 }

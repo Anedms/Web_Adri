@@ -7,23 +7,53 @@
     <meta charset="utf-8">
      <!-- Enlace a la hoja de estilos -->
      <link rel="stylesheet" href="css/estilo2.css">
+     <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">ADRIANA</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">ABOUT ME </a></li>
+                    <li><a href="#art2d" onclick="seleccionar()">ART 2D</a></li>
+                    <li><a href="#art3d" onclick="seleccionar()">ART 3D</a></li>
+                    <li><a href="#proyectos"onclick="seleccionar()">PROYECTOS</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
     
-    <h1>PROYECTOS</h1>
+    
     <div class="inicio">
-        <div class="resumen">
-            <h3>INDIE FOREST</h3>
-            <div class="texto">
-                <p>Este fue un proyecto creado para la HackForGood  2022 de noviembre</p>
-                <p>Lo que creamos fue un juego de gestión de recursos que tenía de objetivo concienciar sobre los incendios forestales de España, para ello creamos un pequeño prototipo.</p>
-                <p>Cómo resultado ganamos el tercer premio</p>
+
+        <div class="titulo">
+            <h1>PROYECTOS</h1>
+        </div>
+
+        <div id="video_resumen">
+            <div class="resumen">
+                <h3>INDIE FOREST</h3>
+                <div class="texto">
+                    <p>Este fue un proyecto creado para la HackForGood  2022 de noviembre</p>
+                    <p>Lo que creamos fue un juego de gestión de recursos que tenía de objetivo concienciar sobre los incendios forestales de España, para ello creamos un pequeño prototipo.</p>
+                    <p>Cómo resultado ganamos el tercer premio</p>
+                </div>
+            </div>
+            <div class="video">
+                <video width="640" height="360" controls> <source src="videos/Prototipo_Video.mp4" type="video/mp4"></video>
             </div>
         </div>
-        <div class="video">
-            <video width="640" height="360" controls> <source src="Prototipo_Video.mp4" type="video/mp4"></video>
-        </div>
+
+     
     </div>
 
     <div class="mi-funcion">
@@ -52,9 +82,10 @@
     </div>
 
     <div class="back">
-        <p><a href="index.html">Volver a la página principal</a></p>
         
-        <img src="img/1384014.png" alt="" href="index.html">
+        <button><a href="index.html">Volver a la página principal</a></button>
+
+    </div>
             
    
 </body></html>
