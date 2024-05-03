@@ -104,7 +104,18 @@ margin-top: 5em;
     width: 80%;
 }
 
+#nave_final {
+    width: 100%;
+    background-color: black;
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
 
+#nave_final img{
+    width: 30%;
+
+}
 
 #columna_nave .fondo {
     display: flex;
