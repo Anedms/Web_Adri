@@ -26,10 +26,30 @@ h1{
     font-size: 50px;
 }
 
-.inicio {
+.iniciodos {
     background-size: cover;
     height: 100vh;
+margin-top: 5em;
 }
+
+.iniciodos .arte {
+
+    text-align:center;
+    width: 100%;
+    height: 5em;
+    align-content: center;
+}
+
+.iniciodos .arte h2 {
+   font-size: 60px;
+    }
+
+.dosd .ilustracion h3 {
+    color: aliceblue;
+    text-align:left;
+    font-size: 30px;
+}
+    
 
 .inicio #video_resumen {
     display: flex;
@@ -69,6 +89,64 @@ h1{
     padding-right: 4em;
     color: black;
 }
+
+
+ #proceso_nave {
+    display: flex;
+}
+
+ #proceso_nave .nave {
+    width: 20%;
+}
+
+
+#proceso_nave .nave img {
+    width: 80%;
+}
+
+
+
+#columna_nave .fondo {
+    display: flex;
+    width: 100%;
+    height: 700px;
+}
+
+#columna_nave .fondo .imagenes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45%;
+    justify-content: space-around;
+}
+
+ #titulo_texto {
+    align-content: center;
+    
+}
+
+#titulo_texto .ilustracion {
+    width: 100%;
+    height: 5em;
+    align-content: center;
+
+}
+
+#columna_nave .fondo #titulo_texto .texto {
+    width: 70%;
+}
+
+#columna_nave .fondo #titulo_texto .texto p {
+border-style: solid;
+border-radius: 4em;
+padding: 2em;
+}
+
+
+#columna_nave .fondo img {
+width: 45%;
+}
+    
 
 .mi-funcion{
     padding: 1.5%;
