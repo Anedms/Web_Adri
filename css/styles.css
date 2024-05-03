@@ -1,0 +1,468 @@
+@import url('"https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet"');
+
+@font-face {
+    font-family: 'Donau';
+    src: url()
+        /* Ruta de la fuente */
+}
+
+body {
+    font-family: 'MiFuente', sans-serif;
+    /* Aplica la fuente a elementos del cuerpo del documento */
+}
+
+html {}
+
+/* MENU barra de arriba */
+.contenedor-header {
+    background: #A24736;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.contenedor-header header {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+/* color del nombre de arriba izq*/
+.contenedor-header header .logo a {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 36px;
+    color: #FFF6E4;
+    text-decoration: none;
+}
+
+.contenedor-header header ul {
+    display: flex;
+    list-style: none;
+}
+
+.contenedor-header header nav ul li a {
+    text-align: none;
+    color: #FFF6E4;
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
+    text-decoration: none;
+}
+
+.contenedor-header header nav ul li a:hover {
+    color: #FFF6E4;
+}
+
+/* menu hamburguesa*/
+.nav-responsive {
+    background-color: #FFF6E4;
+    color: #A24736;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+/* SECCION I N I C I O */
+.inicio {
+    background: url(../img/fondo.png);
+    background-size: cover;
+    height: 100vh;
+    color: #FFF6E4;
+    align-content: center;
+    align-items: center;
+}
+
+.inicio .contenido-banner {
+    padding: 50px;
+    background-color: #1e2326;
+    max-width: 350px;
+    margin: auto;
+    text-align: center;
+    border-radius: 40px;
+}
+
+.inicio .contenido-banner img {
+    margin-top: 40px;
+    border: 10px solid #FFF6E4;
+    display: block;
+    width: 80%;
+    margin: auto;
+    border-radius: 100%;
+}
+
+.inicio .contenido-banner h1 {
+    margin-top: 20px;
+    font-size: 42px;
+    font-family: 'Nanum Gothic', sans-serif;
+    /*para la fuente de inicio portfolio*/
+}
+
+.inicio .contenido-banner h2 {
+    font-size: 15px;
+    font-weight: normal;
+    font-family: 'Donau';
+    /*fuente de inicio adriana  no va*/
+}
+
+.inicio .contenido-banner .redes a:hover {
+    background-color: #A24736;
+}
+
+.sobremi {
+    background-color: #252A2E;
+    color: #FFF6E4;
+    padding: 50px 20px;
+}
+
+.sobremi .contenido-seccion {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.sobremi h2 {
+    font-size: 48px;
+    font-family: 'Nanum Gothic', sans-serif;
+    text-align: center;
+    padding: 20px 0;
+
+}
+
+.sobremi .contenido-seccion p {
+    font: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.sobremi .contenido-seccion p span {
+    color: #A24736;
+    font-weight: bold;
+}
+
+.sobremi .fila .col .contenedor-intereses .interes i {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.sobremi button {
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #FFF6E4;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #FFF6E4;
+    position: relative;
+    z-index: 10;
+}
+
+.sobremi button .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #A24736;
+    z-index: -1;
+    transition: 1s;
+}
+
+.sobremi button:hover .overlay {
+    width: 100%;
+}
+
+/* SECCION DE ALBUNES ART2D 3D Y PROYECTOS*/
+.portfolio {
+    background-color: #252A2E;
+    color: #FFF6E4;
+    padding: 50px 20px;
+}
+
+.portfolio .contenido-seccion {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.portfolio h2 {
+    font-size: 48px;
+    font-family: 'Nanum Gothic', sans-serif;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.portfolio .galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.portfolio .galeria .proyecto {
+    position: relative;
+    max-width: 340px;
+    height: fit-content;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.portfolio .galeria .proyecto img {
+    width: 100%;
+    display: block;
+}
+
+.portfolio .galeria .proyecto .overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: linear-gradient(rgba(162, 71, 54, .8), rgba(162, 71, 54, .8));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 1s;
+    font-size: 18px;
+    letter-spacing: 3px;
+    opacity: 0;
+}
+
+.portfolio .galeria .proyecto .overlay h3 {
+    margin-bottom: 20px;
+    transition: 1s;
+}
+
+.portfolio .galeria .proyecto .overlay:hover {
+    opacity: 1;
+}
+
+.portfolio .galeria .proyecto .overlay:hover h3 {
+    margin-bottom: 0px;
+}
+
+/* SECCION CONTACTO */
+.contacto {
+    background-image: url(img/fondo.png);
+    background-color: #252A2E;
+    color: #252A2E;
+    padding: 5px 0;
+}
+
+.contacto .contenido-seccion {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.contacto h2 {
+    font-size: 48px;
+    font-family: 'Nanum Gothic', sans-serif;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.contacto .fila {
+    display: flex;
+}
+
+.contacto .col {
+    width: 50%;
+    padding: 30px;
+    margin: auto;
+    position: relative;
+}
+
+.contacto .col input,
+.contacto .col textarea {
+    /*Contenedores del contacto*/
+    display: block;
+    width: 100%;
+    padding: 18px;
+    border: none;
+    margin-bottom: 20px;
+    background-color: #252A2E;
+    color: #252A2E;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.contacto button {
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #252A2E;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #252A2E;
+    position: relative;
+    z-index: 10;
+    border-radius: 5px;
+}
+
+.contacto button .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #A24736;
+    z-index: -1;
+    transition: 1s;
+}
+
+.contacto button:hover .overlay {
+    /*color del boton de enviar cuando pones el raton*/
+    width: 100%;
+
+}
+
+.contacto .col .info ul {
+    list-style: none;
+}
+
+.contacto .col .info ul li {
+    margin-bottom: 20px;
+}
+
+.contacto .col .info ul li i {
+    color: #A24736;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+footer {
+    background-color: #252A2E;
+    color: #FFF6E4;
+    padding: 50px 0 30px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+footer .redes {
+    /*espacio de redes*/
+
+}
+
+footer .redes a {
+    color: #FFF6E4;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: .3s;
+}
+
+footer .arriba {
+    display: block;
+
+    width: 50px;
+    height: 50px;
+    background-color: #A24736;
+    color: #FFF6E4;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -25px;
+    border-radius: 50%;
+    line-height: 50px;
+    font-size: 18px;
+}
+
+/* SECCION RESPONSIVE */
+@media screen and (max-width:980px) {
+    nav {
+        display: none;
+    }
+
+    .nav-responsive {
+        display: block;
+    }
+
+    nav.responsive {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        background-color: #252A2E;
+        width: 180px;
+    }
+
+    nav.responsive ul {
+        display: block !important;
+    }
+
+    nav.responsive ul li {
+        border-bottom: 1px solid #fff;
+        padding: 10px 0;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .sobremi .fila {
+        display: block;
+    }
+
+    .sobremi .fila .col {
+        width: auto;
+    }
+
+    .skills .fila {
+        display: block;
+    }
+
+    .skills .fila .col {
+        width: 100%;
+    }
+
+    .skills .fila .col .barra-skill {
+        width: 100%;
+    }
+
+    .curriculum .fila {
+        display: block;
+    }
+
+    .curriculum .fila .col {
+        width: 90%;
+    }
+
+    .curriculum .fila .derecha {
+        margin-left: 20px;
+    }
+
+    .portfolio .galeria {
+        display: block;
+        width: 100%;
+    }
+
+    .portfolio .galeria .proyecto {
+        max-width: 100%;
+    }
+
+    .portfolio .galeria .proyecto img {
+        width: 100%;
+    }
+
+    .contacto .fila {
+        display: block;
+    }
+
+    .contacto .fila .col {
+        width: 100%;
+        text-align: center #000;
+
+    }
+}

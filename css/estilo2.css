@@ -1,0 +1,126 @@
+
+@import url('"https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet"');
+
+@font-face {
+    font-family: 'Donau';
+    src: url()
+        /* Ruta de la fuente */
+}
+
+
+*{
+    box-sizing: border-box;
+    font-family: 'Donau';
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+
+body{
+    font-family: Donau;
+    background-color: blanchedalmond;
+}
+
+h1{
+    text-align: center;
+    font-size: 50px;
+}
+
+.inicio {
+    background-size: cover;
+    height: 100vh;
+}
+
+.inicio #video_resumen {
+    display: flex;
+    margin-right: 4em;
+    margin-left: 4em;
+}
+
+
+
+.inicio .titulo h1{
+    font-size: 60px;
+    text-align: center;
+    padding-bottom: 1em;
+    color: black;
+    text-align: left;
+    text-align: center;
+    margin-bottom: 2em;
+    height: 1.2em;
+    width: 100%;
+}
+
+.inicio .resumen {
+    display: flex;
+    flex-direction: column;
+    }
+    
+
+.inicio .resumen h3{
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 1em;
+    color: black;
+    text-align: left;
+}
+
+.inicio .resumen .texto{
+    padding-right: 4em;
+    color: black;
+}
+
+.mi-funcion{
+    padding: 1.5%;
+    display: block;
+    text-align: center;
+}
+
+.mi-funcion h3{
+    font-size: 30px;
+    padding-bottom: 2em;
+}
+
+.mi-funcion img{
+    padding-top: 2em;
+    max-width: 1000px;
+}
+
+.creditos{
+    padding: 3%;
+    display: flex;
+    max-width: 1500;
+    margin: auto;
+}
+
+.creditos img{
+    max-width: 50%;
+}
+
+.creditos .miembros{
+    padding-left: 4em;
+}
+
+.creditos .miembros h3{
+    font-size: 30px;
+    padding-bottom: 2em;
+}
+
+.back{
+    text-align: center;
+    font-size: 40;
+    padding-bottom: 40px;
+}
+
+.back button {
+width: 10rem;
+height: 3em;
+border-radius: 20px;
+border-style: none;
+background-color: #A24736;
+}
+
+.back button a{
+text-decoration: none;
+color: white;
+}
